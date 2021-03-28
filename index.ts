@@ -22,5 +22,9 @@ export interface BeerOrLiquorBrand {
 export interface MixedDrinkRecipe {
     _id: string;
     name: string;
-    requiredBeersOrLiquors: string[];
+    requiredBeerOrLiquorIds: string[];
+}
+
+export interface MixedDrinkRecipeWithIngredients extends MixedDrinkRecipe {
+    requiredBeersOrLiquors: BeerOrLiquorBrand[];
 }
