@@ -1,0 +1,37 @@
+{
+    "name": "@stan/ddm-types",
+    "version": "0.0.0-beta.1",
+    "description": "types for diamond-drink-menu",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tsc": "tsc",
+        "release:patch": "release-it patch --ci",
+        "release:minor": "release-it minor --ci",
+        "release:major": "release-it major --ci",
+        "release:patch:prerelease": "release-it patch --ci --preRelease=beta",
+        "release:minor:prerelease": "release-it minor --ci --preRelease=beta",
+        "release:major:prerelease": "release-it major --ci --preRelease=beta"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dgoudie/ddm-types.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dgoudie/ddm-types/issues"
+    },
+    "homepage": "https://github.com/dgoudie/ddm-types#readme",
+    "devDependencies": {
+        "release-it": "^14.3.0",
+        "typescript": "^4.1"
+    },
+    "peerDependencies": {
+        "typescript": "^4.1"
+    }
+}
