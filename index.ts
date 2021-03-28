@@ -1,23 +1,25 @@
 export interface BeerOrLiquorBrand {
     _id: string;
     name: string;
-    type:
-        | 'BEER'
-        | 'WINE'
-        | 'CIDER'
-        | 'MEAD'
-        | 'SAKE'
-        | 'GIN'
-        | 'BRANDY'
-        | 'WHISKEY'
-        | 'RUM'
-        | 'TEQUILA'
-        | 'VODKA'
-        | 'ABSINTHE'
-        | 'EVERCLEAR'
-        | 'OTHER';
+    type: BeerOrLiquorBrandType;
     inStock: boolean;
 }
+
+export type BeerOrLiquorBrandType =
+    | 'BEER'
+    | 'WINE'
+    | 'CIDER'
+    | 'MEAD'
+    | 'SAKE'
+    | 'GIN'
+    | 'BRANDY'
+    | 'WHISKEY'
+    | 'RUM'
+    | 'TEQUILA'
+    | 'VODKA'
+    | 'ABSINTHE'
+    | 'EVERCLEAR'
+    | 'OTHER';
 
 export interface MixedDrinkRecipe {
     _id: string;
