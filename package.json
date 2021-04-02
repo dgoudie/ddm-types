@@ -30,9 +30,11 @@
     "homepage": "https://github.com/dgoudie/ddm-types#readme",
     "devDependencies": {
         "release-it": "^14.3.0",
-        "typescript": "^4.1"
+        "typescript": "^4.1",
+        "@types/mongodb": "^3.6.3"
     },
     "peerDependencies": {
-        "typescript": "^4.1"
+        "typescript": "^4.1",
+        "@types/mongodb": "^3.6.3"
     }
 }

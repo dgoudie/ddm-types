@@ -1,5 +1,7 @@
+import { ObjectId } from 'mongodb';
+
 export interface BeerOrLiquorBrand {
-    _id: string;
+    _id: ObjectId;
     name: string;
     type: BeerOrLiquorBrandType;
     inStock: boolean;
@@ -22,7 +24,7 @@ export type BeerOrLiquorBrandType =
     | 'OTHER';
 
 export interface MixedDrinkRecipe {
-    _id: string;
+    _id: ObjectId;
     name: string;
     requiredBeerOrLiquorIds: string[];
 }
