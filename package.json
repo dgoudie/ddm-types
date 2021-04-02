@@ -1,6 +1,6 @@
 {
     "name": "@stan/ddm-types",
-    "version": "1.0.1-beta.2",
+    "version": "1.0.1-beta.3",
     "description": "types for diamond-drink-menu",
     "main": "dist/index.js",
     "files": [
