@@ -3,6 +3,7 @@ import { ObjectId } from 'mongodb';
 export interface BeerOrLiquorBrand {
     _id: ObjectId;
     name: string;
+    nameNormalized: string;
     type: BeerOrLiquorBrandType;
     inStock: boolean;
     price: number;
@@ -27,10 +28,16 @@ export type BeerOrLiquorBrandType =
 export interface MixedDrinkRecipe {
     _id: ObjectId;
     name: string;
-    requiredBeerOrLiquorIds: string[];
+    nameNormalized: string;
+    requiredBeersOrLiquors: MixedDrinkRecipeIngredient[];
+}
+
+export interface MixedDrinkRecipeIngredient {
+    _id: ObjectId;
+    count: number;
 }
 
 export interface MixedDrinkRecipeWithIngredients extends MixedDrinkRecipe {
-    requiredBeersOrLiquors: BeerOrLiquorBrand[];
+    requiredBeersOrLiquors: (BeerOrLiquorBrand & MixedDrinkRecipeIngredient)[];
     price: number;
 }
