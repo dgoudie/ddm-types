@@ -5,6 +5,7 @@ export interface BeerOrLiquorBrand {
     name: string;
     type: BeerOrLiquorBrandType;
     inStock: boolean;
+    price: number;
 }
 
 export type BeerOrLiquorBrandType =
@@ -31,4 +32,5 @@ export interface MixedDrinkRecipe {
 
 export interface MixedDrinkRecipeWithIngredients extends MixedDrinkRecipe {
     requiredBeersOrLiquors: BeerOrLiquorBrand[];
+    price: number;
 }
