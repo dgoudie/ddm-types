@@ -29,6 +29,7 @@ export interface MixedDrinkRecipe {
     _id: ObjectId;
     name: string;
     nameNormalized: string;
+    additionalNotes?: string;
     requiredBeersOrLiquors: MixedDrinkRecipeIngredient[];
 }
 
