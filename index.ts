@@ -10,19 +10,17 @@ export interface BeerOrLiquorBrand {
 }
 
 export type BeerOrLiquorBrandType =
-    | 'BEER'
-    | 'WINE'
-    | 'CIDER'
-    | 'MEAD'
-    | 'SAKE'
-    | 'GIN'
-    | 'BRANDY'
-    | 'WHISKEY'
+    | 'VODKA'
+    | 'LIQUEUR'
     | 'RUM'
     | 'TEQUILA'
-    | 'VODKA'
-    | 'ABSINTHE'
-    | 'EVERCLEAR'
+    | 'WHISKEY'
+    | 'GIN'
+    | 'BEER'
+    | 'SELTZER'
+    | 'DRINK_MIX'
+    | 'WINE'
+    | 'CIDER'
     | 'OTHER';
 
 export interface MixedDrinkRecipe {
