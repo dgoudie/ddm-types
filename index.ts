@@ -40,3 +40,10 @@ export interface MixedDrinkRecipeWithIngredients extends MixedDrinkRecipe {
     requiredBeersOrLiquors: (BeerOrLiquorBrand & MixedDrinkRecipeIngredient)[];
     price: number;
 }
+
+export type WsUpdateMessage = {
+    type: 'UPDATE';
+    apiPath: string;
+};
+
+export type WsBroadcastMessage = WsUpdateMessage & { timestamp: number };
