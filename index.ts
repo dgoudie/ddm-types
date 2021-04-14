@@ -46,4 +46,4 @@ export type WsUpdateMessage = {
     apiPath: string;
 };
 
-export type WsBroadcastMessage = WsUpdateMessage & { timestamp: number };
+export type WsBroadcastMessage = WsUpdateMessage;
