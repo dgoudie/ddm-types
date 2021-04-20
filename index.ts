@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb';
 
 export interface BeerOrLiquorBrand {
-    _id?: ObjectId;
+    _id?: ObjectId | string;
     name: string;
     nameNormalized: string;
     type: BeerOrLiquorBrandType;
@@ -24,7 +24,7 @@ export type BeerOrLiquorBrandType =
     | 'OTHER';
 
 export interface MixedDrinkRecipe {
-    _id?: ObjectId;
+    _id?: ObjectId | string;
     name: string;
     nameNormalized: string;
     additionalNotes?: string;
@@ -32,7 +32,7 @@ export interface MixedDrinkRecipe {
 }
 
 export interface MixedDrinkRecipeIngredient {
-    _id: ObjectId;
+    _id: ObjectId | string;
     count: number;
 }
 
