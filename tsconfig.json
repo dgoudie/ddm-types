@@ -10,5 +10,5 @@
         "baseUrl": "."
     },
     "lib": ["es2018"],
-    "include": ["index.ts"]
+    "include": ["src/index.ts"]
 }
