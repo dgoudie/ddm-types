@@ -21,6 +21,7 @@ export type BeerOrLiquorBrandType =
     | 'DRINK_MIX'
     | 'WINE'
     | 'CIDER'
+    | 'SCHNAPPS'
     | 'OTHER';
 
 export interface BeersAndLiquorBrandsForType {
