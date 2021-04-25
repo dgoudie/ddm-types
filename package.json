@@ -1,6 +1,6 @@
 {
     "name": "@dgoudie/ddm-types",
-    "version": "1.0.1-18",
+    "version": "1.0.1",
     "description": "types for diamond-drink-menu",
     "main": "dist/index.js",
     "files": [
